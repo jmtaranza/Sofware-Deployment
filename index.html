@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Sample Calculator</title>
+</head>
+
+<body>
+    <div class="column" style="float: left; width: 50%">
+        
+    <input id="inputNum" type="text" style="width:158px;" disabled placeholder="0">
+    <br>
+    <button style="width:50px;height:50px;" onclick="addNumber(1);">1</button>
+    <button style="width:50px;height:50px;" onclick="addNumber(2);">2</button>
+    <button style="width:50px;height:50px;" onclick="addNumber(3);">3</button>
+    <br>
+    <button style="width:50px;height:50px;" onclick="addNumber(4);">4</button>
+    <button style="width:50px;height:50px;" onclick="addNumber(5);">5</button>
+    <button style="width:50px;height:50px;" onclick="addNumber(6);">6</button>
+    <br>
+    <button style="width:50px;height:50px;" onclick="addNumber(7);">7</button>
+    <button style="width:50px;height:50px;" onclick="addNumber(8);">8</button>
+    <button style="width:50px;height:50px;" onclick="addNumber(9);">9</button>
+    <br>
+    <button style="width:50px;height:50px;" onclick="addNumber(0);">0</button>
+    <button style="width:50px;height:50px;" onclick="operation('+');">+</button>
+    <button style="width:50px;height:50px;" onclick="operation('-');">-</button>
+    <br>
+    <button style="width:50px;height:50px;" onclick="operation('/');">/</button>
+    <button style="width:50px;height:50px;" onclick="operation('*');">*</button>
+    <button style="width:50px;height:50px;" onclick="operation('%');">%</button>
+    <br>
+    <button id="equal" style="width:50px;height:50px;" disabled onclick="calculate();">=</button>
+
+</div>
+    <div class="column" style="float: left; width: 50%">
+    <h4>
+        History
+    </h4>
+    <div id="displayHistory"></div>
+</div>
+</body>
+<script src="index.js" type="text/javascript"></script>
+
+</html>
